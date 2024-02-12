@@ -1,0 +1,91 @@
+.a4Page {
+ @apply w-[210mm] h-[297mm] bg-[white] border m-[10mm] border-solid border-[black] ml-[345px];
+ /* Optional: border for visualization */
+ /* Optional: margin to simulate printing margin */
+ /* display: flex; */
+ /* position: fixed; */
+}
+cd
+
+.main{
+ @apply flex flex-row;
+ /* justify-content: ; */
+}
+.leftdiv{
+ @apply bg-[rgb(244,245,244)] w-[65%] h-[297mm];
+}
+.rightdiv{
+ @apply bg-[rgb(234,230,254)] w-[35%];
+}
+.topround{
+ @apply bg-[rgb(91,80,155)] w-[180mm] h-[60mm] absolute flex rounded-[250px_0_0_250px] left-[477px] top-[120px];
+}
+.midround{
+ @apply bg-[rgb(91,80,155)] w-[120mm] h-[15mm] absolute -translate-x-2/4 -translate-y-2/4 rounded-[0_250px_250px_0] left-[38.7%] top-[60%];
+}
+.bottomround{
+ @apply bg-[rgb(91,80,155)] w-[80mm] h-[15mm] absolute -translate-x-2/4 -translate-y-2/4 rounded-[0_250px_250px_0] left-[33.7%] top-[110%];
+}
+.circle{
+ @apply bg-[whitesmoke] w-[55mm] h-[55mm] absolute -translate-x-2/4 -translate-y-2/4 rounded-[50%] left-[17%] top-2/4;
+}
+.name{
+ @apply flex flex-col absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-[40%];
+}
+.name h1{
+ @apply text-[whitesmoke] text-[40px] font-[bold];
+ font-family:'Times New Roman', Times, serif;
+}
+.name h3{
+ @apply text-[whitesmoke] text-[25px] font-extralight;
+ /* font-family:'Times New Roman', Times, serif; */
+}
+.designation{
+ @apply mt-[-35px];
+}
+.socialmedia{
+ @apply flex flex-col absolute -translate-x-2/4 -translate-y-2/4 text-[whitesmoke] text-[15px] font-extralight w-[200px] left-[90%] top-2/4;
+ font-family:'Times New Roman', Times, serif;
+}
+.socialmedia p{
+ @apply mt-[5px];
+}
+.midround p{
+ @apply absolute -translate-x-2/4 -translate-y-2/4 text-[rgb(234,230,254)] text-3xl font-bold w-[400px] left-[70%] top-[0%];
+ font-family:'Times New Roman', Times, serif;
+}
+.bottomround p{
+ @apply absolute -translate-x-2/4 -translate-y-2/4 text-[rgb(234,230,254)] text-3xl font-bold w-[400px] left-[105%] top-[0%];
+ font-family:'Times New Roman', Times, serif;
+}
+.work-list{
+ @apply flex flex-col absolute -translate-x-2/4 -translate-y-2/4 left-[36.3%] top-[85%];
+}
+.work{
+ @apply flex flex-row justify-start items-center;
+}
+
+
+.workp{
+ @apply pl-2.5;
+}
+.educationdetail{
+ @apply flex flex-row justify-start items-center absolute -translate-x-2/4 -translate-y-2/4 text-[15px] font-extralight w-[400px] text-[rgb(60,60,60)] left-[40%] top-[125%];
+ font-family:'Times New Roman', Times, serif;
+}
+.educationdetail li{
+ @apply list-disc text-[17px] font-[bold] w-[400px] text-[rgb(60,60,60)] ml-0 my-2.5;
+ font-family:'Times New Roman', Times, serif;
+}
+.textintro{
+ @apply absolute -translate-x-2/4 -translate-y-2/4 text-lg font-[bold] w-[400px] text-[rgb(90,80,154)] text-justify w-60 left-[67%] top-[80%];
+ font-family:'Times New Roman', Times, serif;
+}
+.skills{
+ @apply absolute -translate-x-2/4 -translate-y-2/4 text-lg font-[bold] w-[400px] text-[rgb(90,80,154)] text-justify w-60 left-[67%] top-[125%];
+ font-family:'Times New Roman', Times, serif;
+}
+.skills li{
+ @apply list-disc text-lg font-[bold] w-[400px] text-[rgb(60,60,60)] ml-0 my-2.5;
+ font-family:'Times New Roman', Times, serif;
+}
